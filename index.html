@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="//oier.fun/css/quligem-ui.css" rel="stylesheet" />
+    <title>OIer's Logo</title>
+    <style>
+        #logo{
+            display: inline-block;
+            height: 1.5em;
+            position: relative;
+            top: .37em;
+        }
+        #hitcount{
+            display: inline-block;
+            position: relative;
+            top: -.65em;
+            border-radius: .14em;
+            box-sizing: border-box;
+        }
+        .inputs{
+            display: block;
+            height: 2.8em;
+            width: 640px;
+            margin: auto;
+            margin-top: .6em;
+            margin-bottom: .6em;
+            border-radius: 2.2em;
+            border: 2px solid gray;
+            padding-left: .8em;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="center" style="width: 720px">
+            <h1 class="header teal">OIer's Logo</h1>
+            <div class="divider"></div>
+            <h3 class="teal">Logo 细节参数</h1>
+            <input id="s_logo_title" class="inputs" placeholder="Logo for OIers" />
+            <input id="s_logo_slogan" class="inputs" placeholder="https://logo.oier.fun/" />
+            <div>
+                Title 字体粗细
+                <label><input type="radio" name="b_logo_title" class="b_logo_title" value="600">加粗</label>
+                <label><input type="radio" name="b_logo_title" class="b_logo_title" value="400" checked>正常</label>
+                <label><input type="radio" name="b_logo_title" class="b_logo_title" value="200">超细</label>
+            </div>
+            <div>
+                Slogan 字体粗细
+                <label><input type="radio" name="b_logo_slogan" class="b_logo_slogan" value="600">加粗</label>
+                <label><input type="radio" name="b_logo_slogan" class="b_logo_slogan" value="400" checked>正常</label>
+                <label><input type="radio" name="b_logo_slogan" class="b_logo_slogan" value="200">超细</label>
+            </div>
+            <div>
+                Logo 主题颜色
+                <label style="color: rgb(219, 40, 40)"><input type="radio" name="b_logo_bg" class="b_logo_bg" value="rgb(219, 40, 40)">红</label>
+                <label style="color: rgb(242, 113, 28)"><input type="radio" name="b_logo_bg" class="b_logo_bg" value="rgb(242, 113, 28)">橙</label>
+                <label style="color: rgb(251, 189, 8)"><input type="radio" name="b_logo_bg" class="b_logo_bg" value="rgb(251, 189, 8)">黄</label>
+                <label style="color: rgb(181, 204, 24)"><input type="radio" name="b_logo_bg" class="b_logo_bg" value="rgb(181, 204, 24)">黄绿</label>
+                <label style="color: rgb(33, 166, 69)"><input type="radio" name="b_logo_bg" class="b_logo_bg" value="rgb(33, 166, 69)">绿</label>
+                <label style="color: rgb(0, 181, 173)"><input type="radio" name="b_logo_bg" class="b_logo_bg" value="rgb(0, 181, 173)" checked>蓝绿</label>
+                <label style="color: rgb(33, 133, 208)"><input type="radio" name="b_logo_bg" class="b_logo_bg" value="rgb(33, 133, 208)">蓝</label>
+                <label style="color: rgb(100, 53, 201)"><input type="radio" name="b_logo_bg" class="b_logo_bg" value="rgb(100, 53, 201)">紫罗兰</label>
+                <label style="color: rgb(163, 51, 200)"><input type="radio" name="b_logo_bg" class="b_logo_bg" value="rgb(163, 51, 200)">紫</label>
+                <label style="color: rgb(224, 57, 151)"><input type="radio" name="b_logo_bg" class="b_logo_bg" value="rgb(224, 57, 151)">粉</label>
+                <label style="color: rgb(165, 103, 63)"><input type="radio" name="b_logo_bg" class="b_logo_bg" value="rgb(165, 103, 63)">棕</label>
+            </div>
+            <div>
+                Logo 颜色样式
+                <label><input type="radio" name="b_logo_bgfg" class="b_logo_bgfg" value="true" checked>黑底白字</label>
+                <label><input type="radio" name="b_logo_bgfg" class="b_logo_bgfg" value="false">白底黑字</label>
+            </div>
+            <div>
+                Logo 边框样式
+                <label><input type="radio" name="b_logo_radius" class="b_logo_radius" value="true" checked>圆角矩形</label>
+                <label><input type="radio" name="b_logo_radius" class="b_logo_radius" value="false">普通矩形</label>
+            </div>
+            <div>
+                Logo 制作信息
+                <label><input type="radio" name="b_made_by" class="b_made_by" value="true" checked>显示</label>
+                <label><input type="radio" name="b_made_by" class="b_made_by" value="false">隐藏</label>
+            </div>
+            <br />
+            <div class="divider"></div>
+            <h3 class="teal">Logo 预览</h1>
+            <div id="logo_holder" style="width: 640px; height: 400px; background-color: rgb(0, 181, 173); color: rgba(255, 255, 255); margin: auto; border-radius: 24px; box-sizing: border-box">
+                <div style="height: 136px"></div>
+                <h1 id="logo_title" style="text-align: center; font-size: 48px" class="center">Logo for OIers</h1>
+                <p id="logo_slogan" style="text-align: center; font-size: 28px;" class="center">https://logo.oier.fun/</p>
+                <p id="logo_made_by" style="font-size: 16px; position: absolute; bottom: 0; width: 100%; text-align: center">Made By logo.oier.fun</p>
+            </div>
+            <br />
+            <div class="divider"></div>
+            <h3 class="teal">下载 与 分享</h1>
+            <a id="share" class="button blue reversal" style="width: 640px; text-decoration: none" target="_blank" href="share?tt=Logo for OIers&sg=https://logo.oier.fun/&bf=true&cr=rgb(0, 181, 173)&ttb=400&sgb=400&br=true&mb=true">下载 或 分享</a>
+        </div>
+        <br />
+    </div>
+    <div class="footer center">
+        <br />
+        <a class="link teal bolder" href="https://www.piterator.com/" target="_blank">Piterator</a>
+        |
+        <a class="link green bolder" href="https://oj.piterator.com/" target="_blank">PiOJ</a>
+        |
+        <a class="link olive bolder" href="https://upload.piterator.com/" target="_blank">File Upload</a>
+        |
+        <a class="link green bolder" href="//oier.fun/" target="_blank">Oier2048</a>
+        <br /><br />
+        <a class="link" href="http://icelava.top/" target="_blank">IceLava</a>
+        |
+        <a class="link" href="http://icelava.top/OI-Nazo/" target="_blank">OI Nazo</a>
+        |
+        <a class="link" href="http://icelava.top/BarrenLand/" target="_blank">BarrenLand</a>
+        |
+        <a class="link" href="https://jelly-goat.gitee.io/" target="_blank">JellyGoat</a>
+        <br /><br />
+        Copyright &copy; Piterator 2017 - 2020
+        <br /><br />
+        <a class="link grey" href="http://www.beian.miit.gov.cn/" target="_blank">沪ICP备19004827号-3</a>
+        <br /><br />
+    </div>
+    <script src="https://static.piterator.com/node_modules/jquery/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        var bgfg="true",color="rgb(0, 181, 173)",ttb="400",sgb="400",tt="",sg="",br="true",mb="true";
+        function update() {
+            $("#share").attr("href","share?tt="+escape(tt)+"&sg="+escape(sg)+"&bf="+bgfg+"&cr="+color+"&ttb="+ttb+"&sgb="+sgb+"&br="+br+"&mb="+mb);
+        }
+        $('#s_logo_title').bind('input propertychange', function() {
+            var reg = /^\s*$/;tt=$(this).val();
+            if(reg.test($(this).val())) $('#logo_title').text("Logo for OIers");
+            else $('#logo_title').text($(this).val());
+            update();
+        });
+        $('#s_logo_slogan').bind('input propertychange', function() {
+            var reg = /^\s*$/;sg=$(this).val();
+            if(reg.test($(this).val())) $('#logo_slogan').text("https://logo.oier.fun/");
+            else $('#logo_slogan').text($(this).val());
+            update();
+        });
+        $('.b_logo_title').bind('input propertychange', function() {
+            var val=$('input:radio[name="b_logo_title"]:checked').val();
+            ttb=val;
+            $('#logo_title').css("font-weight",val);
+            $('#s_logo_title').css("font-weight",val);
+            update();
+        });
+        $('.b_logo_slogan').bind('input propertychange', function() {
+            var val=$('input:radio[name="b_logo_slogan"]:checked').val();
+            sgb=val;
+            $('#logo_slogan').css("font-weight",val);
+            $('#s_logo_slogan').css("font-weight",val);
+            update();
+        });
+        $('.b_logo_bg').bind('input propertychange', function() {
+            color=$('input:radio[name="b_logo_bg"]:checked').val();
+            if(bgfg=="true"){
+                $('#logo_holder').css("background-color",color);
+                $('#logo_holder').css("color","#ffffff");
+                $('#logo_holder').css("border","none");
+            }else{
+                $('#logo_holder').css("background-color","#ffffff");
+                $('#logo_holder').css("color",color);
+                $('#logo_holder').css("border","4px solid "+color);
+            }
+            update();
+        });
+        $('.b_logo_bgfg').bind('input propertychange', function() {
+            bgfg=$('input:radio[name="b_logo_bgfg"]:checked').val();
+            if(bgfg=="true"){
+                $('#logo_holder').css("background-color",color);
+                $('#logo_holder').css("color","#ffffff");
+                $('#logo_holder').css("border","none");
+            }else{
+                $('#logo_holder').css("background-color","#ffffff");
+                $('#logo_holder').css("color",color);
+                $('#logo_holder').css("border","4px solid "+color);
+            }
+            update();
+        });
+        $('.b_logo_radius').bind('input propertychange', function() {
+            br=$('input:radio[name="b_logo_radius"]:checked').val();
+            if(br=="true") $('#logo_holder').css("border-radius","24px");
+            else $('#logo_holder').css("border-radius","0px");
+            update();
+        });
+        $('.b_made_by').bind('input propertychange', function() {
+            mb=$('input:radio[name="b_made_by"]:checked').val();
+            if(mb=="true") $('#logo_made_by').css("display","block");
+            else $('#logo_made_by').css("display","none");
+            update();
+        });
+    </script>
+</body>
+</html>
